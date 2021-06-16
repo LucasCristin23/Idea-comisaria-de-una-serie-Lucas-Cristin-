@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denuncias</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header"><!--Header-->
+        <nav class="encabezadoGeneral">
+            <ul class="ulNav">
+                <li class="encabezadoGeneral__li"><a href="index.html">Menu principal</a></li>
+                <li class="encabezadoGeneral__li"><a href="pag2.html">Equipo</a></li>
+                <li class="encabezadoGeneral__li"><a href="pag3.html">Trabaja con nosotros</a></li>
+                <li class="encabezadoGeneral__li"><a href="pag4.html">Denuncias</a></li>
+            </ul>
+        </nav>
+</header>
+
+    <main><!--Apertura del main-->
+        <section><!--Lista ordenada de como realizar una denuncia-->
+            <h1>¿Como realizo una denuncia?</h1>
+            <ol>
+                <li class="sectionDenuncias__li">Completa el formulario que se encuentra a continuacion</li>
+                <li class="sectionDenuncias__li">Explica detalladamente tu problema (Cuanto mejor detallado este, mas rapido se resolvera)
+                <li class="sectionDenuncias__li">Nosotros lo enviaremos a un cuerpo especificado en denucnias que investigara</li>
+                <li class="sectionDenuncias__li">Usted recibira un mail o una llamada dentro de 48 horas habiles</li>
+            </ol>
+        </section>
+        <section>
+            <form action=""><!--Inicio del formulario-->
+                <fieldset>
+                    <legend>REALIZA TU DENUNCIA</legend>
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Nombre y apellido"> 
+                        <br>
+                        <label for="Edad">Edad</label>
+                        <input type="number" id="Edad">   
+                        <br>   
+                        <label for="dni">DNI</label>
+                        <input type="number" id="dni">
+                        <br>
+                        <label for="Genero">Genero</label>
+                        <select name="" id="Genero">
+                            <option value="">Masculino</option>
+                            <option value="">Femenino</option>
+                            <option value="">Otro</option>
+                        </select>
+                        <br>
+                        <label for="descripcion">Describi lo sucedido</label>
+                        <textarea name="" id="descripcion" cols="30" rows="10" placeholder="Mientras mas detalles des, mas rapido se va a solucionar"></textarea>
+                        <br>
+                        <label for="tipodedenuncia">Modo de denuncia</label>
+                        Anonima<input type="radio" name="tipodedenuncia" id="tipodedenuncia">
+                        No anonima<input type="radio" name="tipodedenuncia">
+                        <br>
+                        <label for="sos conciente">¿Sos conciente de las repercuciones legales?</label>
+                        <input type="checkbox" id="sos conciente">
+                        <br>
+                        <input type="submit" value="Envia tu denuncia">
+                        <input type="Reset" value="Resetea el formulario">
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <p>
+                Recordar que tu denuncia es muy importante, tanto para nosotros como para la ciudad, nos ayuda a combatir las injusticias y mantener seguras las calles de nuestra ciudad
+            </p>
+        </section>
+    </main>
+    
+    <footer class="footer"><!--Pie de pagina-->
+        <!--Imagen de telefono-->
+        <p class="footer__item">1123495480</p>
+        <p class="footer__item">Mail</p>
+        <p class="footer__item">lukicristin@gmail.com</p>
+        <!--Imagen de una balanza de justicia-->
+      </footer>
+</body>
+</html>

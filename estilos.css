@@ -1,0 +1,255 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image:radial-gradient(white, gray);
+}
+/*Estilo index*/
+#asideIndex{
+    display: inline-block;
+    grid-area: nav;
+    height: 100%;
+}
+#mainIndex{
+    display: inline-block;
+    grid-area: main;
+}
+#gridEstructuraIndex{
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    grid-template-rows: 300px 400px;
+    grid-template-areas: "nav main"
+                         "nav main";
+}
+
+/*Estilo del encabezado*/
+#headerIndex{
+    height: 65px;
+    width: 100%;
+    background-image: linear-gradient(to right, yellow, rgb(179, 182, 31));
+    border-bottom: black 1px solid;
+}
+
+#divHeaderIndex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+.animate__animated{ 
+    font-style: normal;
+    font-weight:bolder;
+    color: black;
+    position:sticky;
+    font-family: 'Mate SC', serif;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+/*Estilo del nav index*/
+.navIndex{ 
+    background-color: rgb(22, 22, 22);
+    display: inline-block;
+    height: 100%;
+    padding: 5% 5% 0 5%;
+    border-right: 2px solid white;
+    margin-right: 10%;
+}
+.navIndex__lista{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    justify-content: space-around;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Mate SC', serif;
+    color: white;
+    height: 100%;
+}
+.aIndex{
+    color: white;
+    text-decoration: none;
+}
+
+/*Primera seccion index*/
+.primeraSeccionIndex{
+    display: inline-block;
+    height: 10px;
+    width: 800px;
+    text-align: center;
+}
+.primeraSeccionIndex__titulo{
+    font-size: 40px ;
+    color:#b30e0e;
+    display: inline-block;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 1%;
+    margin: 1%;
+    font-family: 'Mate SC', serif;
+}
+.primeraSeccionIndex__parrafo{
+    color:green;
+    line-height: 1.5;
+
+}
+
+
+/*Estilo nav general*/
+.header{
+    width: 100%;
+    height: 60PX;
+    background-image: linear-gradient(to right, yellow, rgb(179, 182, 31));
+    opacity: 0.9; 
+    border-bottom: 1px solid black;
+}
+.encabezadoGeneral{
+    color:black;
+    font-size: 1.4em;
+    height: 100%;
+}
+.ulNav{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.encabezadoGeneral__li{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Mate SC', serif;
+    font-weight:bold;
+    padding: 5px;
+    transition: 1s;
+}
+.encabezadoGeneral__li:hover{
+    background-color:gray;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+/*Estilo footer general*/
+.footer{
+    height: 50px;
+    background:rgb(41, 41, 41);
+    border-top:rgb(255, 255, 0) 1px solid;
+    text-align: center;
+}
+.footer__item{
+    color: rgba(255, 255, 0, 0.836);
+    display: inline-block;
+    font-family: 'Mate SC', serif;
+}
+
+
+/*ESTILO SEGUNDA PAG*/
+#seccionGrillaMainEquipo{
+    display: grid;
+    grid-template-columns:100% ;
+    grid-template-rows: 50px 100px 300px 500px;
+    grid-template-areas: "titulo"
+                         "parrafo"
+                         "oficiales"
+                         "detectives";
+    font-family: 'Mate SC', serif;
+}
+
+
+#equipo{
+    color:red;
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 5px;
+}
+#divParrafoEquipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: parrafo;
+    font-size: 1.3em;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#seccionOficiales{
+    grid-area: oficiales;
+    display: flex;
+    justify-content: space-evenly;
+}
+#seccionDetectives
+
+#equipotactico{
+    color:yellow;
+}
+
+/*Estilo tabla equipo*/
+table{
+    border: 1px solid black; 
+}
+th{
+    border: 1px solid red;
+}
+tr{
+    border: 1px solid red;
+}
+td{
+    border:1px solid red;
+}
+
+/*Estilo pag 3*/
+.articuloPag3{
+    color:brown;
+    font-size: medium;
+}
+
+/*Estilo 4 pag*/
+.sectionDenuncias__li{
+    list-style-type:lower-roman;
+}
+section form{
+    color:rgb(80, 23, 133);
+}
+
+.tituloPrimeraSeccionPag1{
+    background-image:url("Imagenes/Jake\ peralta.jpg") ;
+    background-size: cover;
+    height:200PX ;
+    display: inline-block;
+    color: red;
+    text-align:center;
+}
+@media only screen and (max-width: 600px){
+    #gridEstructuraIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 400px;
+        grid-template-areas: "asidexs"
+                              "mainxs";
+    }
+    #asideIndex{
+        grid-area:asidexs;
+        width: 100%;
+    }
+    #mainIndex{
+        grid-area: mainxs;
+    }
+   .navIndex{
+       width: 100%;
+   }
+
+}
+
