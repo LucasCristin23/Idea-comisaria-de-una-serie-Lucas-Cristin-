@@ -156,7 +156,7 @@ header{
 }
 
 
-/*ESTILO SEGUNDA PAG*/
+/*ESTILO PAG EQUIPO*/
 #seccionGrillaMainEquipo{
     display: grid;
     grid-template-columns:100% ;
@@ -191,8 +191,16 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
-#seccionDetectives
+.pSeccionOficiales{
+    align-self: center;
+    
+}
 
+#seccionDetectives
+.pDetectives{
+    text-align: center;
+    font-size: 3em;
+}
 #equipotactico{
     color:yellow;
 }
