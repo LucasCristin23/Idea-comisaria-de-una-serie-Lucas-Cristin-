@@ -5,6 +5,10 @@
 body{
     background-image:radial-gradient(white, gray);
 }
+img{
+    min-width: 100%;
+    max-height: 100%;
+}
 /*Estilo index*/
 #asideIndex{
     display: inline-block;
@@ -160,7 +164,7 @@ header{
 #seccionGrillaMainEquipo{
     display: grid;
     grid-template-columns:100% ;
-    grid-template-rows: 50px 100px 300px 500px;
+    grid-template-rows: 50px 100px 300px 800px;
     grid-template-areas: "titulo"
                          "parrafo"
                          "oficiales"
@@ -198,12 +202,42 @@ header{
 
 #seccionDetectives
 .pDetectives{
+    grid-area: detectives;
     text-align: center;
     font-size: 3em;
 }
 #equipotactico{
     color:yellow;
 }
+
+/*SECCIO DE DETECTIVES ESTILO FIGURITAS*/
+#divDetectives{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contenedorDetectives{
+    height: 250px;
+    width: 15%;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedorDetectives:hover{
+transform: scale(1.1);
+transition: 0.8s;
+}
+.imagesDetectives{
+    height: 80%;
+    width: 90%;
+
+}
+
+
 
 /*Estilo tabla equipo*/
 table{
@@ -241,6 +275,7 @@ section form{
     color: red;
     text-align:center;
 }
+
 @media only screen and (max-width: 600px){
     #gridEstructuraIndex{
         grid-template-columns: 100%;
