@@ -81,10 +81,19 @@ img{
 
 /*Primera seccion index*/
 .primeraSeccionIndex{
-    display: inline-block;
-    height: 10px;
-    width: 800px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 150px 100px 100px 500px ;
+    grid-template-areas: "titulo"
+                         "logo"
+                         "parrafo1"
+                         "parrafo2"
+                         "carrusel";    
+}
+#primeraSeccionTituloDiv{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
 }
 .primeraSeccionIndex__titulo{
     font-size: 40px ;
@@ -96,52 +105,37 @@ img{
     margin: 1%;
     font-family: 'Mate SC', serif;
 }
+#primerParrafoIndexDiv{
+    grid-area: parrafo1;
+}
 .primeraSeccionIndex__parrafo{
     color:green;
     line-height: 1.5;
-
+    text-align: center;
+}
+.segundaSeccionIndexParrafo{
+    text-align: center;
+}
+#segundoParrafoIndexDiv{
+    grid-area: parrafo2;
+}
+#divLogoIndex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#logoIndex{
+    grid-area: logo;
+    height: 150px;
+    width: 30%;
 }
 
 
 /*Estilo nav general*/
-.header{
-    width: 100%;
-    height: 60PX;
-    background-image: linear-gradient(to right, yellow, rgb(179, 182, 31));
-    opacity: 0.9; 
-    border-bottom: 1px solid black;
-}
-.encabezadoGeneral{
-    color:black;
-    font-size: 1.4em;
-    height: 100%;
-}
-.ulNav{
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.estiloNavGeneralBS{
+    background-image: linear-gradient(to right, yellow, rgb(216, 216, 120));
 }
 
-.encabezadoGeneral__li{
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    font-family: 'Mate SC', serif;
-    font-weight:bold;
-    padding: 5px;
-    transition: 1s;
-}
-.encabezadoGeneral__li:hover{
-    background-color:gray;
-    border-radius: 15px;
-    opacity: 0.9;
-}
-
-header nav ul a{
-    text-decoration: none;
-    color: black;
-}
 header{
     position: sticky;
     top: 0px;
@@ -275,6 +269,7 @@ section form{
     color: red;
     text-align:center;
 }
+
 
 @media only screen and (max-width: 600px){
     #gridEstructuraIndex{
