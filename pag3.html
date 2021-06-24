@@ -11,43 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!--INICIO NAV DEL BS-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light estiloNavGeneralBS">
-          <!--logo-->
-          <nav class="navbar navbar-light bg-light estiloNavGeneralBS" >
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                <img src="Imagenes/Seal_of_City_of_Brooklyn.png" alt="Logo de Brooklyn" width="30" height="24">
-              </a>
+   
+  <header>
+    <!--INICIO NAV DEL BS-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light estiloNavGeneralBS">
+      <!--logo-->
+      
+      <!--Fin-->
+        <div class="container-fluid">
+            <div id="logoDeElNavGeneral">
+                <img src="Imagenes/Seal_of_City_of_Brooklyn.png" alt="">
             </div>
-          </nav>
-          <!--Fin-->
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Brookling 99</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Menu Principal</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pag1.html">¿Quienes somos?</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pag3.html">Trabaja con Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="pag4.html" tabindex="-1" aria-disabled="true">Denuncias</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-        <!--FIN DEL NAV DE BS-->
-    </header>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse divHeaderArreglo" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item liBSGeneral">
+                <a class="nav-link active" aria-current="page" href="index.html">Menu Principal</a>
+              </li>
+              <li class="nav-item liBSGeneral">
+                <a class="nav-link" href="pag1.html">¿Quienes Somos?</a>
+              </li>
+              <li class="nav-item liBSGeneral">
+                <a class="nav-link" href="pag2.html">Equipo</a>
+              </li>
+              <li class="nav-item liBSGeneral">
+                <a class="nav-link" href="pag4.html" tabindex="-1" aria-disabled="true">Denuncias</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--FIN DEL NAV DE BS-->
+</header>
+
 
     <main>
         <section> <!--Inicio primera seccion-->
@@ -68,12 +66,20 @@
     </main>
     
     <footer class="footer"><!--Pie de pagina-->
-        <!--Imagen de telefono-->
-        <p class="footer__item">1123495480</p>
-        <p class="footer__item">Mail</p>
-        <p class="footer__item">lukicristin@gmail.com</p>
-        <!--Imagen de una balanza de justicia-->
-      </footer>
+      <p id="parrafoFooter">Seguinos en nuestras redes</p>
+      <div id="divFooter">
+        <div class="foto">
+          <a href="#"><img src="Imagenes/icono wpp 2.0.png" alt="Icono Wpp"></a>
+        </div>
+        <div class="foto">
+          <a href="https://www.instagram.com/nbcbrooklyn99/?hl=es-la"><img src="Imagenes/Icono inst 2.0.png" alt="Icono Instagram"></a>
+        </div>
+        <div class="foto">
+          <a href="https://twitter.com/nbcbrooklyn99"><img src="Imagenes/Icono tww 2.0.png" alt="Icono Twiter"></a>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/luki_cristin/?hl=es-la" class="aFooter"><p id="span">Pagina diseñada por Lucas Cristin</p></a>
+    </footer>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

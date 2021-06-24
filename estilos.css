@@ -49,8 +49,6 @@ img{
     position:sticky;
     font-family: 'Mate SC', serif;
     opacity: 0.9;
-    height: 100%;
-    width: 100%;
     text-align: center;
 }
 
@@ -134,6 +132,18 @@ img{
 /*Estilo nav general*/
 .estiloNavGeneralBS{
     background-image: linear-gradient(to right, yellow, rgb(216, 216, 120));
+    border-bottom: 1px solid black;
+    padding: 1.3%;
+}
+#logoDeElNavGeneral{
+    width: 40px;
+    height: 40px;
+}
+.divHeaderArreglo{
+    justify-content: space-evenly;
+}
+.liBSGeneral{
+    font-size: 1.1em;
 }
 
 header{
@@ -142,17 +152,34 @@ header{
 }
 /*Estilo footer general*/
 .footer{
-    height: 50px;
+    height: 110px;
     background:rgb(41, 41, 41);
     border-top:rgb(255, 255, 0) 1px solid;
     text-align: center;
-}
-.footer__item{
-    color: rgba(255, 255, 0, 0.836);
-    display: inline-block;
     font-family: 'Mate SC', serif;
 }
-
+#parrafoFooter{
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: white;
+}
+#divFooter{
+    display: flex;
+    justify-content: center;
+}
+.foto{
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+}
+#span{
+    color: gray;
+    text-decoration: none;
+}
+.aFooter{
+    text-decoration: none;
+}
 
 /*ESTILO PAG EQUIPO*/
 #seccionGrillaMainEquipo{
