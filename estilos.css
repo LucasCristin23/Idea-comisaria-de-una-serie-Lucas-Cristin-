@@ -22,7 +22,7 @@ img{
 #gridEstructuraIndex{
     display: grid;
     grid-template-columns: 20% 80% ;
-    grid-template-rows: 300px 400px;
+    grid-template-rows: 300px 500px;
     grid-template-areas: "nav main"
                          "nav main";
 }
@@ -81,7 +81,7 @@ img{
 .primeraSeccionIndex{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 150px 100px 100px 500px ;
+    grid-template-rows: 100px 150px 100px 100px 350px ;
     grid-template-areas: "titulo"
                          "logo"
                          "parrafo1"
@@ -127,7 +127,14 @@ img{
     height: 150px;
     width: 30%;
 }
-
+.carruselIndex{
+    grid-area: carrusel;
+    transition: 5s;
+}
+.imgCarrusel{
+    height: 100%;
+    width: 100%;
+}
 
 /*Estilo nav general*/
 .estiloNavGeneralBS{

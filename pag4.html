@@ -77,10 +77,10 @@
             <p class="pFormDenuncia">Realiza tu denuncia</p>
               <div class="row">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
                 </div>
                 </div>
              <div class="col-md-6">
@@ -124,11 +124,32 @@
             <input class="form-check-input" type="checkbox" value="" id="inlineCheckDefault">
             <label class="form-check-label estiloForm" for="inlineCheckDefault">Soy conciente de las repercuciones legales</label>
           </div>
+          <!-- Button trigger modal -->
+          <br>
+<button type="button" class="btn btn-dark edadDniGenero" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Enviar denuncia
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enviar denuncia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Esta seguro/a que quiere enviar la denuncia?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
           <div class="col-12">
-            <button class="btn btn-primary edadDniGenero" type="submit">Enviar denuncia</button>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-primary edadDniGenero" type="reset">Resetear formulario</button>
+            <button class="btn btn-dark edadDniGenero" type="reset">Resetear formulario</button>
           </div>
           </div>
         </section>
