@@ -280,14 +280,31 @@ td{
     font-size: medium;
 }
 
-/*Estilo 4 pag*/
-.sectionDenuncias__li{
-    list-style-type:lower-roman;
+/*ESTILO PAG DENUNCIAS*/
+.tituloDenuncias{
+    font-family: 'Mate SC', serif;
+    text-align: center;
 }
-section form{
-    color:rgb(80, 23, 133);
+.listaComoRealizarDenuncia{
+    height: 50px;
+    width: 4%;
+    margin: 0.5%;
+}
+#pasosDenuncia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mate SC', serif;
+    font-size: 1.5em;
 }
 
+/*FORMULARIO DENUNCIAS*/
+.divDelFormularioDenuncias{
+    background-color: rgb(221, 37, 37);
+    font-family: 'Mate SC', serif;
+    border-radius: 10px;
+    color: black;
+}
 .tituloPrimeraSeccionPag1{
     background-image:url("Imagenes/Jake\ peralta.jpg") ;
     background-size: cover;
@@ -295,6 +312,20 @@ section form{
     display: inline-block;
     color: red;
     text-align:center;
+}
+.pFormDenuncia{
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    font-weight: 900;
+}
+.estiloForm{
+    font-size: 1.5em;
+}
+.edadDniGenero{
+    margin-bottom: 5px;
 }
 
 

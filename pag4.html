@@ -50,49 +50,90 @@
 
     <main><!--Apertura del main-->
         <section><!--Lista ordenada de como realizar una denuncia-->
-            <h1>¿Como realizo una denuncia?</h1>
-            <ol>
-                <li class="sectionDenuncias__li">Completa el formulario que se encuentra a continuacion</li>
-                <li class="sectionDenuncias__li">Explica detalladamente tu problema (Cuanto mejor detallado este, mas rapido se resolvera)
-                <li class="sectionDenuncias__li">Nosotros lo enviaremos a un cuerpo especificado en denucnias que investigara</li>
-                <li class="sectionDenuncias__li">Usted recibira un mail o una llamada dentro de 48 horas habiles</li>
-            </ol>
+            <h1 class="tituloDenuncias">¿Como realizo una denuncia?</h1>
+            <div id="pasosDenuncia">
+              <div class="listaComoRealizarDenuncia">
+                <img src="Imagenes/numero 1.png" alt="">
+              </div>
+              <p>Completa el formulario que se encuentra a continuacion</p>
+              <div class="listaComoRealizarDenuncia">
+                <img src="Imagenes/Numero 2.png" alt="">
+              </div>
+              <p>Explica detalladamente tu problema (Cuanto mejor detallado este, mas rapido se resolvera)</p>
+              <div class="listaComoRealizarDenuncia">
+                <img src="Imagenes/Numero 3.png" alt="">
+              </div>
+              <p>Nosotros lo enviaremos a un cuerpo especificado en denucnias que investigara</p>
+              <div class="listaComoRealizarDenuncia">
+                <img src="Imagenes/numero 4.png" alt="">
+              </div>
+              <p>Usted recibirá un mail o una llamada dentro de 48 horas hábiles</p>
+            </div>
         </section>
+
+        <!--FORMULARIO-->
         <section>
-            <form action=""><!--Inicio del formulario-->
-                <fieldset>
-                    <legend>REALIZA TU DENUNCIA</legend>
-                        <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" placeholder="Nombre y apellido"> 
-                        <br>
-                        <label for="Edad">Edad</label>
-                        <input type="number" id="Edad">   
-                        <br>   
-                        <label for="dni">DNI</label>
-                        <input type="number" id="dni">
-                        <br>
-                        <label for="Genero">Genero</label>
-                        <select name="" id="Genero">
-                            <option value="">Masculino</option>
-                            <option value="">Femenino</option>
-                            <option value="">Otro</option>
-                        </select>
-                        <br>
-                        <label for="descripcion">Describi lo sucedido</label>
-                        <textarea name="" id="descripcion" cols="30" rows="10" placeholder="Mientras mas detalles des, mas rapido se va a solucionar"></textarea>
-                        <br>
-                        <label for="tipodedenuncia">Modo de denuncia</label>
-                        Anonima<input type="radio" name="tipodedenuncia" id="tipodedenuncia">
-                        No anonima<input type="radio" name="tipodedenuncia">
-                        <br>
-                        <label for="sos conciente">¿Sos conciente de las repercuciones legales?</label>
-                        <input type="checkbox" id="sos conciente">
-                        <br>
-                        <input type="submit" value="Envia tu denuncia">
-                        <input type="Reset" value="Resetea el formulario">
-                </fieldset>
-            </form>
+          <div class="container divDelFormularioDenuncias">
+            <p class="pFormDenuncia">Realiza tu denuncia</p>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+                </div>
+             <div class="col-md-6">
+              <label for="inputEmail4" class="form-label estiloForm">Numero</label>
+              <input type="number" class="form-control" id="inputEmail4" placeholder="Recuerde ingresar su numero de area">
+            </div>
+            <div class="mb-3 ">
+              <label for="exampleFormControlInput1" class="form-label estiloForm">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EmailEjemplo@gmail.com">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control edadDniGenero" placeholder="Edad" aria-label="Edad">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control edadDniGenero" placeholder="DNI" aria-label="DNI">
+            </div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Genero</option>
+              <option value="1">Masculino</option>
+              <option value="2">Femenino</option>
+              <option value="3">Otro</option>
+            </select>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label estiloForm">Describi lo sucedido</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mientras mejor cuentes lo sucedido mas rapido vamos a poder actuar"></textarea>
+            </div>
+            <label for="formFile" class="form-label estiloForm">Adjunta evidencias (En caso que tengas)</label>
+            <input class="form-control" type="file" id="formFile">
+            <div>
+              <label for="formRadioDefault"><p class="estiloForm">Modo de denuncia</p></label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioDefault" id="formRadioDefault">
+              <label class="form-check-label estiloForm" for="formRadioDefault">Anonima</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioDefault" id="formRadioChecked" checked="">
+              <label class="form-check-label estiloForm" for="formRadioChecked">No anonima</label>
+            </div>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="" id="inlineCheckDefault">
+            <label class="form-check-label estiloForm" for="inlineCheckDefault">Soy conciente de las repercuciones legales</label>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary edadDniGenero" type="submit">Enviar denuncia</button>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary edadDniGenero" type="reset">Resetear formulario</button>
+          </div>
+          </div>
         </section>
+        <!--FIN FORMULARIO-->
+        
         <section>
             <p>
                 Recordar que tu denuncia es muy importante, tanto para nosotros como para la ciudad, nos ayuda a combatir las injusticias y mantener seguras las calles de nuestra ciudad
