@@ -1,0 +1,32 @@
+.seccionAPrimerapag, .seccionBPrimerapag {
+  text-align: center;
+  font-family: "Uchen", serif; }
+  .seccionAPrimerapag .tituloPrimeraSeccionPag1, .seccionBPrimerapag .tituloPrimeraSeccionPag1 {
+    font-size: 2em; }
+  .seccionAPrimerapag .PPag1, .seccionBPrimerapag .PPag1 {
+    font-size: 1.5em; }
+
+.seccionBPrimerapag div iframe {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px black; }
+
+.articuloPag3 h2 {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Uchen", serif; }
+
+.articuloPag3 p {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Uchen", serif; }
+
+.seccionAPag3 p {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Uchen", serif;
+  padding: 5%; }
+
+.seccionBPag3 p {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Uchen", serif; }

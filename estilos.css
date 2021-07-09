@@ -189,16 +189,6 @@ header{
     text-decoration: none;
 }
 
-/*ESTILO PRIMERA PAGINA-- ¿QUIENES SOMOS? */
-.tituloPrimeraSeccionPag1{
-    text-align: center;
-    font-size: 2em;
-}
-.PPag1{
-    text-align: center;
-    font-size: 1.5em;
-}
-
 /*ESTILO PAG EQUIPO*/
 #seccionGrillaMainEquipo{
     display: grid;
@@ -292,11 +282,6 @@ td{
     border:1px solid red;
 }
 
-/*Estilo pag 3*/
-.articuloPag3{
-    color:brown;
-    font-size: medium;
-}
 
 /*ESTILO PAG DENUNCIAS*/
 .tituloDenuncias{
