@@ -71,6 +71,7 @@ img{
     font-family: 'Mate SC', serif;
     color: white;
     height: 100%;
+    padding-left: 0;
 }
 .aIndex{
     color: white;
@@ -186,6 +187,16 @@ header{
 }
 .aFooter{
     text-decoration: none;
+}
+
+/*ESTILO PRIMERA PAGINA-- ¿QUIENES SOMOS? */
+.tituloPrimeraSeccionPag1{
+    text-align: center;
+    font-size: 2em;
+}
+.PPag1{
+    text-align: center;
+    font-size: 1.5em;
 }
 
 /*ESTILO PAG EQUIPO*/
@@ -312,14 +323,7 @@ td{
     border-radius: 10px;
     color: black;
 }
-.tituloPrimeraSeccionPag1{
-    background-image:url("Imagenes/Jake\ peralta.jpg") ;
-    background-size: cover;
-    height:200PX ;
-    display: inline-block;
-    color: red;
-    text-align:center;
-}
+
 .pFormDenuncia{
     font-size: 2em;
     text-align: center;

@@ -1,0 +1,26 @@
+{
+  "name": "idea-comisaria-de-una-serie-lucas-cristin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/agregar.css",
+ "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasCristin23/Idea-comisaria-de-una-serie-Lucas-Cristin-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasCristin23/Idea-comisaria-de-una-serie-Lucas-Cristin-/issues"
+  },
+  "homepage": "https://github.com/LucasCristin23/Idea-comisaria-de-una-serie-Lucas-Cristin-#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.10"
+  }
+}
