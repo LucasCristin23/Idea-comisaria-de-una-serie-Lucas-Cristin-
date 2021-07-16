@@ -26,7 +26,19 @@
   font-family: "Uchen", serif;
   padding: 5%; }
 
+.seccionAPag3 .pFormTrabaja {
+  padding: 2%;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black; }
+
 .seccionBPag3 p {
   text-align: center;
   font-size: 1.5em;
   font-family: "Uchen", serif; }
+
+.seccionBPag3 .divDelFormularioInscripcion {
+  background-color: #24beb2;
+  font-family: 'Mate SC', serif;
+  border-radius: 10px;
+  color: black; }

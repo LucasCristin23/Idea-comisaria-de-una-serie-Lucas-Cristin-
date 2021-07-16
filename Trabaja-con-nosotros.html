@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En esta sección podes anotarte para trabajar con nosotros o capacitarte para ser policía.">
+    <meta name="keywords" content="Comisaria, policia, detectives, conocenos, denuncias, oficiales">
+    <link rel="shortcut icon" href="Imagenes/Seal_of_City_of_Brooklyn.png" type="image/x-icon">
+    <meta name="author" content="Lucas Cristin">
+    <meta name="copyright" content="Brooklyn 99">
+    <!--OPEN GRAPHT-->
+    <meta property="og: title" content="Brooklyn precinto 99">
+    <meta property="og: description" content="En esta sección podes anotarte para trabajar con nosotros o capacitarte para ser policía.">
+    <meta property="og: image" content="Imagenes/Seal_of_City_of_Brooklyn.png">
+    <meta property="og: url" content="https://comisariabrooklyn99.000webhostapp.com/index.html">
+    <meta property="og: local" content="es_ES">
     <title>Trabaja con Nosotros</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
@@ -61,11 +71,153 @@
         </section>
         <section class="seccionAPag3"> <!--Inicio segunda seccion-->
             <p>En caso de ya ser oficial, detective u trabajar en limpieza, dejanos tus datos en el siguiente formulario y nosotros nos contactaremos con vos</p>
-            <!--Hacer el formulario para que dejen los datos-->
-        </section>
+            
+            <!--INICIO DEL PRIMER FORMULARIO-->
+            <div>
+              <form action="">
+                <div class="container divDelFormularioDenuncias">
+                  <p class="pFormTrabaja">Completa los siguientes datos</p>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                      </div>
+                      </div>
+                   <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label estiloForm">Numero</label>
+                    <input type="number" class="form-control" id="inputEmail4" placeholder="Recuerde ingresar su numero de area">
+                  </div>
+                  <div class="mb-3 ">
+                    <label for="exampleFormControlInput1" class="form-label estiloForm">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EmailEjemplo@gmail.com">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control edadDniGenero" placeholder="Edad" aria-label="Edad">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control edadDniGenero" placeholder="DNI" aria-label="DNI">
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Genero</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                  </select>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label estiloForm">Contanos sobre vos</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nombra tu formación, lugar de residencia, experiencia laboral y todo lo que creas necesario"></textarea>
+                  </div>
+                  <label for="formFile" class="form-label estiloForm">Adjunta tu curriculum vitae</label>
+                  <input class="form-control" type="file" id="formFile">
+                
+                <!-- Button trigger modal -->
+                <br>
+      <button type="button" class="btn btn-dark edadDniGenero" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Enviar curriculum
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enviar curriculum</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ¿Esta seguro/a que quiere enviar el curriculum?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                <div class="col-12">
+                  <button class="btn btn-dark edadDniGenero" type="reset">Resetear formulario</button>
+                </div>
+              </form>
+            </div>
+            </div>
+            <!--FIN DEL PRIMER FORMULARIO-->
+
         <section class="seccionBPag3"> <!--Inicio tercera seccion-->
             <p>En caso de querer iniciar el curso y capacitación para ser oficial llenar el siguiente formulario.</p>
-            <!--Hacer el otro formulario-->
+           
+            <!--INICIO DEL SEGUNDO FORMULARIO-->           
+            <div>
+              <form action="">
+                <div class="container divDelFormularioInscripcion">
+                  <p class="pFormTrabaja">Completa los siguientes datos</p>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                      </div>
+                      </div>
+                   <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label estiloForm">Numero</label>
+                    <input type="number" class="form-control" id="inputEmail4" placeholder="Recuerde ingresar su numero de area">
+                  </div>
+                  <div class="mb-3 ">
+                    <label for="exampleFormControlInput1" class="form-label estiloForm">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EmailEjemplo@gmail.com">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control edadDniGenero" placeholder="Edad" aria-label="Edad">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control edadDniGenero" placeholder="DNI" aria-label="DNI">
+                  </div>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Genero</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                  </select>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label estiloForm">Contanos sobre vos</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Nombra tu formación, lugar de residencia, y porque queres hacer este curso y/oficial capacitacion"></textarea>
+                  </div>
+                  <label for="formFile" class="form-label estiloForm">Adjunta tus documentos</label>
+                  <input class="form-control" type="file" id="formFile">
+                
+                <!-- Button trigger modal -->
+                <br>
+      <button type="button" class="btn btn-dark edadDniGenero" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Enviar inscripcion
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enviar inscripcion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ¿Esta seguro/a que quiere enviar la inscripcion?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Atras</button>
+              <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+                <div class="col-12">
+                  <button class="btn btn-dark edadDniGenero" type="reset">Resetear formulario</button>
+                </div>
+              </form>
+            </div>
+            <!--FIN DEL SEGUNDO FORMULARIO-->
+
         </section>
     </main>
     

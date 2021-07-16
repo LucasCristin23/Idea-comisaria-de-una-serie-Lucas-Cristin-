@@ -21,7 +21,7 @@ img{
 }
 #gridEstructuraIndex{
     display: grid;
-    grid-template-columns: 20% 80% ;
+    grid-template-columns: 17% 80% ;
     grid-template-rows: 300px 500px;
     grid-template-areas: "nav main"
                          "nav main";
@@ -59,7 +59,6 @@ img{
     height: 100%;
     padding: 0% 5% 0% 5%;
     border-right: 2px solid white;
-    margin-right: 10%;
 }
 .navIndex__lista{
     display: flex;

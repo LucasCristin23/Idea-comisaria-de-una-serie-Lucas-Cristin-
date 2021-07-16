@@ -1,5 +1,6 @@
 //VARIABLES
 $fuenteMain:'Uchen', serif;
+$borderForms:2px solid black;
 
 //MIXMIN
 @mixin estilos1 ($align, $size) {
@@ -49,10 +50,22 @@ $fuenteMain:'Uchen', serif;
         font-family: $fuenteMain;
         padding: 5%;
     }
+    .pFormTrabaja{
+        padding: 2%;
+        border-bottom:$borderForms;
+        border-left: $borderForms;
+        border-right: $borderForms;
+    }
 }
 .seccionBPag3{
     p{
         @include estilos1(center,1.5em);
         font-family: $fuenteMain;
+    }
+    .divDelFormularioInscripcion{
+        background-color: rgb(36, 190, 178);
+        font-family: 'Mate SC', serif;
+        border-radius: 10px;
+        color: black;
     }
 }
