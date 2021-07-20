@@ -1,0 +1,21 @@
+//--MEDIAS QUERI
+
+@media only screen and (max-width: 600px){
+    #gridEstructuraIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 400px;
+        grid-template-areas: "asidexs"
+                              "mainxs";
+    }
+    #asideIndex{
+        grid-area:asidexs;
+        width: 100%;
+    }
+    #mainIndex{
+        grid-area: mainxs;
+    }
+   .navIndex{
+       width: 100%;
+   }
+
+}

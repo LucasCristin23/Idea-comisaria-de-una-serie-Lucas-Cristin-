@@ -1,0 +1,30 @@
+//---ESTILO FOOTER GENERAL
+.footer{
+    height: 110px;
+    background:rgb(41, 41, 41);
+    border-top:rgb(65, 65, 30) 1px solid;
+    text-align: center;
+    font-family: 'Mate SC', serif;
+}
+#parrafoFooter{
+    font-size: 1.5em;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: white;
+}
+#divFooter{
+    display: flex;
+    justify-content: center;
+}
+.foto{
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+}
+#span{
+    color: gray;
+    text-decoration: none;
+}
+.aFooter{
+    text-decoration: none;
+}

@@ -1,0 +1,37 @@
+//----ESTILO PAG TRABAJA CON NOSOTROS
+
+.articuloPag3{
+    h2{
+        @include estilos1(center,2em);
+        font-family: $fuenteMain;
+    }
+    p{
+        @include estilos1(center,1.5em);
+        font-family:$fuenteMain;
+    }
+}
+.seccionAPag3{
+    p{
+        @include estilos1(center,1.5em );
+        font-family: $fuenteMain;
+        padding: 5%;
+    }
+    .pFormTrabaja{
+        padding: 2%;
+        border-bottom:$borderForms;
+        border-left: $borderForms;
+        border-right: $borderForms;
+    }
+}
+.seccionBPag3{
+    p{
+        @include estilos1(center,1.5em);
+        font-family: $fuenteMain;
+    }
+    .divDelFormularioInscripcion{
+        background-color: rgb(36, 190, 178);
+        font-family: 'Mate SC', serif;
+        border-radius: 10px;
+        color: black;
+    }
+}

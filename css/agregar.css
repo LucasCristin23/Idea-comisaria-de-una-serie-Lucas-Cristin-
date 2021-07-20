@@ -1,3 +1,177 @@
+.estiloNavGeneralBS {
+  background-image: linear-gradient(to right, yellow, #d8d878);
+  border-bottom: 1px solid black;
+  padding: 1.3%; }
+
+#logoDeElNavGeneral {
+  width: 200px;
+  height: 70px; }
+
+.divHeaderArreglo {
+  justify-content: flex-end; }
+
+.liBSGeneral {
+  font-size: 1.2em;
+  font-family: "Mate SC", serif; }
+
+header {
+  position: sticky;
+  top: 0px; }
+
+.footer {
+  height: 110px;
+  background: #292929;
+  border-top: yellow 1px solid;
+  text-align: center;
+  font-family: 'Mate SC', serif; }
+
+#parrafoFooter {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: white; }
+
+#divFooter {
+  display: flex;
+  justify-content: center; }
+
+.foto {
+  height: 35px;
+  width: 35px;
+  margin: 5px; }
+
+#span {
+  color: gray;
+  text-decoration: none; }
+
+.aFooter {
+  text-decoration: none; }
+
+#asideIndex {
+  display: inline-block;
+  grid-area: nav;
+  height: 100%; }
+
+#mainIndex {
+  display: inline-block;
+  grid-area: main; }
+
+#gridEstructuraIndex {
+  display: grid;
+  grid-template-columns: 17% 80%;
+  grid-template-rows: 300px 500px;
+  grid-template-areas: "nav main" "nav main"; }
+
+#headerIndex {
+  height: 65px;
+  width: 100%;
+  background-image: linear-gradient(to right, yellow, #b3b61f);
+  border-bottom: black 1px solid; }
+
+#divHeaderIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+.animate__animated {
+  font-style: normal;
+  font-weight: bolder;
+  color: black;
+  position: sticky;
+  font-family: 'Mate SC', serif;
+  opacity: 0.9;
+  text-align: center; }
+
+.navIndex {
+  background-color: #161616;
+  display: inline-block;
+  height: 100%;
+  padding: 0% 5% 0% 5%;
+  border-right: 2px solid white; }
+
+.navIndex__lista {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Mate SC', serif;
+  color: white;
+  height: 100%;
+  padding-left: 0; }
+
+.aIndex {
+  color: white;
+  text-decoration: none; }
+
+.primeraSeccionIndex {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 150px 100px 100px 350px;
+  grid-template-areas: "titulo" "logo" "parrafo1" "parrafo2" "carrusel"; }
+
+#primeraSeccionTituloDiv {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center; }
+
+.primeraSeccionIndex__titulo {
+  font-size: 40px;
+  color: #b30e0e;
+  display: inline-block;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 1%;
+  margin: 1%;
+  font-family: 'Mate SC', serif; }
+
+#primerParrafoIndexDiv {
+  grid-area: parrafo1; }
+
+.primeraSeccionIndex__parrafo {
+  color: green;
+  line-height: 1.5;
+  text-align: center; }
+
+.segundaSeccionIndexParrafo {
+  text-align: center; }
+
+#segundoParrafoIndexDiv {
+  grid-area: parrafo2; }
+
+#divLogoIndex {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+#logoIndex {
+  grid-area: logo;
+  height: 150px;
+  width: 30%; }
+
+.carruselIndex {
+  grid-area: carrusel;
+  transition: 5s; }
+
+.imgCarrusel {
+  height: 100%;
+  width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  #gridEstructuraIndex {
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 400px;
+    grid-template-areas: "asidexs" "mainxs"; }
+  #asideIndex {
+    grid-area: asidexs;
+    width: 100%; }
+  #mainIndex {
+    grid-area: mainxs; }
+  .navIndex {
+    width: 100%; } }
+
 .seccionAPrimerapag, .seccionBPrimerapag {
   text-align: center;
   font-family: "Uchen", serif; }

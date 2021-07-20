@@ -1,0 +1,5 @@
+//MIXMIN
+@mixin estilos1 ($align, $size) {
+    text-align: $align;
+    font-size: $size;
+}

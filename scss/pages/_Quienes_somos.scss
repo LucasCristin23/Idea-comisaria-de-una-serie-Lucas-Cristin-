@@ -1,0 +1,20 @@
+//----ESTILO PAGINA ¿QUIENES SOMOS?
+.seccionAPrimerapag{
+    text-align: center;
+    font-family: $fuenteMain;
+    .tituloPrimeraSeccionPag1{
+        font-size: 2em;
+    }
+    .PPag1{
+        font-size: 1.5em;
+    }
+}
+.seccionBPrimerapag{
+    @extend .seccionAPrimerapag;
+    div{
+        iframe{
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 5px black;
+        }
+    }
+}
