@@ -1,0 +1,55 @@
+//-----ESTILO PAG DENUNCIAS
+
+.tituloDenuncias{
+    font-family: $fuenteHeaders;
+    text-align: center;
+    font-size: 4em;
+}
+
+.listaComoRealizarDenuncia{
+    height: 50px;
+    width: 4%;
+    margin: 0.5%;
+}
+#pasosDenuncia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fuenteHeaders;
+    font-size: 1.5em;
+}
+.pFinalDenuncias{
+    text-align: center;
+    font-size: 1.7em;
+    font-family: $fuenteMain;
+    padding: 2%;
+}
+
+/*FORMULARIO DENUNCIAS*/
+.divDelFormularioDenuncias{
+    background-color: rgb(221, 37, 37);
+    font-family: $fuenteMain;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black;
+}
+
+.pFormDenuncia{
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    font-weight: 900;
+}
+.estiloForm{
+    font-size: 1.5em;
+}
+.edadDniGenero{
+    margin-bottom: 5px;
+}
+.botonRevisarDenuncia{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}

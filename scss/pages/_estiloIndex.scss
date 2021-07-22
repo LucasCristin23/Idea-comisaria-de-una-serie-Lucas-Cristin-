@@ -65,12 +65,15 @@
     color: white;
     text-decoration: none;
 }
+.aIndex:hover{
+    color: gray;
+}
 
 //----ESTILO PRIMERA SECCION INDEX
 .primeraSeccionIndex{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 150px 100px 100px 350px ;
+    grid-template-rows: 100px 150px 80px 100px 350px ;
     grid-template-areas: "titulo"
                          "logo"
                          "parrafo1"
@@ -83,25 +86,31 @@
     justify-content: center;
 }
 .primeraSeccionIndex__titulo{
-    font-size: 40px ;
+    font-size: 4em;
     color:#b30e0e;
     display: inline-block;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    padding: 1%;
     margin: 1%;
     font-family: 'Mate SC', serif;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 #primerParrafoIndexDiv{
     grid-area: parrafo1;
 }
 .primeraSeccionIndex__parrafo{
-    color:green;
+    color:black;
     line-height: 1.5;
     text-align: center;
+    font-size: 1.7em;
+    font-family: $fuenteMain;
+    margin-top: 2%;
 }
 .segundaSeccionIndexParrafo{
     text-align: center;
+    font-size: 1.7em;
+    font-family: $fuenteMain;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 #segundoParrafoIndexDiv{
     grid-area: parrafo2;
@@ -119,6 +128,7 @@
 .carruselIndex{
     grid-area: carrusel;
     transition: 5s;
+    margin-top: 1%;
 }
 .imgCarrusel{
     height: 100%;

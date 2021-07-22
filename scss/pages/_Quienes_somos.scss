@@ -1,16 +1,25 @@
 //----ESTILO PAGINA ¿QUIENES SOMOS?
+
 .seccionAPrimerapag{
     text-align: center;
-    font-family: $fuenteMain;
+    margin-bottom: 2%;
     .tituloPrimeraSeccionPag1{
-        font-size: 2em;
+        font-size: 4em;
+        font-family: $fuenteHeaders;
     }
     .PPag1{
         font-size: 1.5em;
+        font-family: $fuenteMain;
+        margin-bottom: 2%;
     }
 }
 .seccionBPrimerapag{
+    margin-bottom: 2%;
     @extend .seccionAPrimerapag;
+    p{
+        margin-bottom: 2%;
+
+    }
     div{
         iframe{
             border-radius: 10px;

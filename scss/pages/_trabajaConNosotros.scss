@@ -1,20 +1,29 @@
 //----ESTILO PAG TRABAJA CON NOSOTROS
+//----IMPORTS
+@import 'utilities/_mixmin.scss';
+
 
 .articuloPag3{
-    h2{
-        @include estilos1(center,2em);
-        font-family: $fuenteMain;
+    h1{
+        @include estilos1(center,4em);
+        font-family: $fuenteHeaders;
+
     }
     p{
         @include estilos1(center,1.5em);
         font-family:$fuenteMain;
+        padding: 2%;
     }
 }
+//-----CREAR UNA ANIMACION PARA EL TE ESPERAMOS ANCIOSOS
+
+//----SECCION A
 .seccionAPag3{
     p{
         @include estilos1(center,1.5em );
         font-family: $fuenteMain;
-        padding: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .pFormTrabaja{
         padding: 2%;
@@ -22,16 +31,50 @@
         border-left: $borderForms;
         border-right: $borderForms;
     }
+    .divImagenDeFlecha{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1%;
+        .imagenDeFlecha{
+            height: 100px;
+            width: 100px;
+        }
+    }
+    
 }
+//-----SECCION B
 .seccionBPag3{
+    margin-bottom: 1%;
     p{
-        @include estilos1(center,1.5em);
+        @include estilos1(center,2em);
         font-family: $fuenteMain;
+        margin-top: 5%;
+        padding-left:5%;
+        padding-right:5%;
     }
     .divDelFormularioInscripcion{
         background-color: rgb(36, 190, 178);
         font-family: 'Mate SC', serif;
         border-radius: 10px;
         color: black;
+        border: 1px solid black;
+        .pFormTrabaja{
+            font-size: 1.5em;
+            margin-top: 0;
+            padding: 2%;
+            border-bottom:$borderForms;
+            border-left: $borderForms;
+            border-right: $borderForms;
+        }
+    }
+    
+    .divImagenDeFlecha{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1%;
+        .imagenDeFlecha{
+            height: 100px;
+            width: 100px;
+        }
     }
 }

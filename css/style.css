@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: radial-gradient(white, gray); }
+
+img {
+  min-width: 100%;
+  max-height: 100%; }
+
+.estiloNavGeneralBS {
+  background-image: linear-gradient(to right, yellow, #d8d878);
+  border-bottom: 1px solid black;
+  padding: 1.3%; }
+
+#logoDeElNavGeneral {
+  width: 200px;
+  height: 70px; }
+
+.divHeaderArreglo {
+  justify-content: flex-end; }
+
+.liBSGeneral {
+  font-size: 1.2em;
+  font-family: "Mate SC", serif; }
+
+header {
+  position: sticky;
+  top: 0px; }
+
+.footer {
+  height: 110px;
+  background: #292929;
+  border-top: #41411e 1px solid;
+  text-align: center;
+  font-family: 'Mate SC', serif;
+  border-top: 1px solid yellow; }
+
+#parrafoFooter {
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: white; }
+
+#divFooter {
+  display: flex;
+  justify-content: center; }
+
+.foto {
+  height: 35px;
+  width: 35px;
+  margin: 5px; }
+
+#span {
+  color: gray;
+  text-decoration: none; }
+
+.aFooter {
+  text-decoration: none; }
+
+.tituloDenuncias {
+  font-family: "Mate SC", serif;
+  text-align: center;
+  font-size: 4em; }
+
+.listaComoRealizarDenuncia {
+  height: 50px;
+  width: 4%;
+  margin: 0.5%; }
+
+#pasosDenuncia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Mate SC", serif;
+  font-size: 1.5em; }
+
+.pFinalDenuncias {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: "Uchen", serif;
+  padding: 2%; }
+
+/*FORMULARIO DENUNCIAS*/
+.divDelFormularioDenuncias {
+  background-color: #dd2525;
+  font-family: "Uchen", serif;
+  border-radius: 10px;
+  color: black;
+  border: 1px solid black; }
+
+.pFormDenuncia {
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  font-weight: 900; }
+
+.estiloForm {
+  font-size: 1.5em; }
+
+.edadDniGenero {
+  margin-bottom: 5px; }
+
+.botonRevisarDenuncia {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%; }
+
+#seccionGrillaMainEquipo {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 70px 100px 250px 800px;
+  grid-template-areas: "titulo" "parrafo" "oficiales" "detectives";
+  font-family: 'Mate SC', serif; }
+
+#equipo {
+  color: black;
+  grid-area: titulo;
+  text-align: center;
+  font-size: 4em;
+  font-family: "Mate SC", serif; }
+
+.hrEquipo {
+  margin: 0;
+  margin-left: 7%;
+  margin-right: 7%; }
+
+#divParrafoEquipo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-area: parrafo;
+  font-size: 1.3em;
+  padding-left: 100px;
+  padding-right: 100px; }
+
+#seccionOficiales {
+  grid-area: oficiales;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3%; }
+  #seccionOficiales .imagenOficiales {
+    height: 300px;
+    margin-left: 7%; }
+  #seccionOficiales .pSeccionOficiales {
+    align-self: center;
+    font-size: 1.5em;
+    padding: 5%; }
+
+#seccionDetectives {
+  margin-top: 3%; }
+  #seccionDetectives .tituloDetectives {
+    grid-area: detectives;
+    text-align: center;
+    font-size: 3em; }
+  #seccionDetectives .pDetectives {
+    grid-area: detectives;
+    text-align: center;
+    font-size: 2em; }
+  #seccionDetectives #equipotactico {
+    color: yellow; }
+
+/*SECCIO DE DETECTIVES ESTILO FIGURITAS*/
+#divDetectives {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.contenedorDetectives {
+  height: 250px;
+  width: 15%;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.contenedorDetectives:hover {
+  transform: scale(1.1);
+  transition: 0.8s; }
+
+.imagesDetectives {
+  height: 80%;
+  width: 90%; }
+
+.divError {
+  width: 100%;
+  height: 480px; }
+  .divError p {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Uchen", serif; }
+  .divError .pError {
+    padding-top: 10%; }
+
+#asideIndex {
+  display: inline-block;
+  grid-area: nav;
+  height: 100%; }
+
+#mainIndex {
+  display: inline-block;
+  grid-area: main; }
+
+#gridEstructuraIndex {
+  display: grid;
+  grid-template-columns: 17% 80%;
+  grid-template-rows: 300px 500px;
+  grid-template-areas: "nav main" "nav main"; }
+
+#headerIndex {
+  height: 65px;
+  width: 100%;
+  background-image: linear-gradient(to right, yellow, #b3b61f);
+  border-bottom: black 1px solid; }
+
+#divHeaderIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+.animate__animated {
+  font-style: normal;
+  font-weight: bolder;
+  color: black;
+  position: sticky;
+  font-family: 'Mate SC', serif;
+  opacity: 0.9;
+  text-align: center; }
+
+.navIndex {
+  background-color: #161616;
+  display: inline-block;
+  height: 100%;
+  padding: 0% 5% 0% 5%;
+  border-right: 2px solid white; }
+
+.navIndex__lista {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-around;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Mate SC', serif;
+  color: white;
+  height: 100%;
+  padding-left: 0; }
+
+.aIndex {
+  color: white;
+  text-decoration: none; }
+
+.aIndex:hover {
+  color: gray; }
+
+.primeraSeccionIndex {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 150px 80px 100px 350px;
+  grid-template-areas: "titulo" "logo" "parrafo1" "parrafo2" "carrusel"; }
+
+#primeraSeccionTituloDiv {
+  grid-area: titulo;
+  display: flex;
+  justify-content: center; }
+
+.primeraSeccionIndex__titulo {
+  font-size: 4em;
+  color: #b30e0e;
+  display: inline-block;
+  margin: 1%;
+  font-family: 'Mate SC', serif;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black; }
+
+#primerParrafoIndexDiv {
+  grid-area: parrafo1; }
+
+.primeraSeccionIndex__parrafo {
+  color: black;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1.7em;
+  font-family: "Uchen", serif;
+  margin-top: 2%; }
+
+.segundaSeccionIndexParrafo {
+  text-align: center;
+  font-size: 1.7em;
+  font-family: "Uchen", serif;
+  padding-left: 4%;
+  padding-right: 4%; }
+
+#segundoParrafoIndexDiv {
+  grid-area: parrafo2; }
+
+#divLogoIndex {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+#logoIndex {
+  grid-area: logo;
+  height: 150px;
+  width: 30%; }
+
+.carruselIndex {
+  grid-area: carrusel;
+  transition: 5s;
+  margin-top: 1%; }
+
+.imgCarrusel {
+  height: 100%;
+  width: 100%; }
+
+.seccionAPrimerapag, .seccionBPrimerapag {
+  text-align: center;
+  margin-bottom: 2%; }
+  .seccionAPrimerapag .tituloPrimeraSeccionPag1, .seccionBPrimerapag .tituloPrimeraSeccionPag1 {
+    font-size: 4em;
+    font-family: "Mate SC", serif; }
+  .seccionAPrimerapag .PPag1, .seccionBPrimerapag .PPag1 {
+    font-size: 1.5em;
+    font-family: "Uchen", serif;
+    margin-bottom: 2%; }
+
+.seccionBPrimerapag {
+  margin-bottom: 2%; }
+  .seccionBPrimerapag p {
+    margin-bottom: 2%; }
+  .seccionBPrimerapag div iframe {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px black; }
+
+.articuloPag3 h1 {
+  text-align: center;
+  font-size: 4em;
+  font-family: "Mate SC", serif; }
+
+.articuloPag3 p {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Uchen", serif;
+  padding: 2%; }
+
+.seccionAPag3 p {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Uchen", serif;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.seccionAPag3 .pFormTrabaja {
+  padding: 2%;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black; }
+
+.seccionAPag3 .divImagenDeFlecha {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%; }
+  .seccionAPag3 .divImagenDeFlecha .imagenDeFlecha {
+    height: 100px;
+    width: 100px; }
+
+.seccionBPag3 {
+  margin-bottom: 1%; }
+  .seccionBPag3 p {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Uchen", serif;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%; }
+  .seccionBPag3 .divDelFormularioInscripcion {
+    background-color: #24beb2;
+    font-family: 'Mate SC', serif;
+    border-radius: 10px;
+    color: black;
+    border: 1px solid black; }
+    .seccionBPag3 .divDelFormularioInscripcion .pFormTrabaja {
+      font-size: 1.5em;
+      margin-top: 0;
+      padding: 2%;
+      border-bottom: 2px solid black;
+      border-left: 2px solid black;
+      border-right: 2px solid black; }
+  .seccionBPag3 .divImagenDeFlecha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%; }
+    .seccionBPag3 .divImagenDeFlecha .imagenDeFlecha {
+      height: 100px;
+      width: 100px; }
+
+@media only screen and (max-width: 600px) {
+  #gridEstructuraIndex {
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 400px;
+    grid-template-areas: "asidexs" "mainxs"; }
+  #asideIndex {
+    grid-area: asidexs;
+    width: 100%; }
+  #mainIndex {
+    grid-area: mainxs; }
+  .navIndex {
+    width: 100%; } }
