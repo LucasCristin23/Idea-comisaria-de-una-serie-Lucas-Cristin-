@@ -31,7 +31,7 @@
     height: 100%;
     
 }
-.animate__animated{ 
+.encabezadoIndex{ 
     font-style: normal;
     font-weight:bolder;
     color: black;
@@ -64,6 +64,7 @@
 .aIndex{
     color: white;
     text-decoration: none;
+    transition: 0.5s;
 }
 .aIndex:hover{
     color: gray;
@@ -119,11 +120,17 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: -1;
 }
 #logoIndex{
     grid-area: logo;
     height: 150px;
     width: 30%;
+    img{
+        animation-name: animacionEscudo;
+        animation-iteration-count: infinite;
+        animation-duration: 15s;
+    }
 }
 .carruselIndex{
     grid-area: carrusel;
@@ -133,4 +140,42 @@
 .imgCarrusel{
     height: 100%;
     width: 100%;
+}
+
+//----ANIMACION DEL ESCUDO DE BROOKLYN
+@keyframes animacionEscudo {
+    0%{
+        transform: rotateY(0deg);
+    }
+    10%{
+        transform: rotateY(36deg);
+    }
+    20%{
+        transform: rotateY(72deg);
+    }
+    30%{
+        transform: rotateY(108deg);
+    }
+    40%{
+        transform: rotateY(144deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    60%{
+        transform: rotateY(216deg);
+    }
+    70%{
+        transform: rotateY(252deg);
+    }
+    80%{
+        transform: rotateY(288deg);
+    }
+    90%{
+        transform: rotateY(324deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+
 }

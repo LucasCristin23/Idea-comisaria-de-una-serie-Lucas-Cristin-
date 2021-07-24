@@ -7,12 +7,19 @@
     h1{
         @include estilos1(center,4em);
         font-family: $fuenteHeaders;
-
+        font-weight: 300;
     }
     p{
         @include estilos1(center,1.5em);
         font-family:$fuenteMain;
         padding: 2%;
+        font-weight: 200;
+    }
+    .TeEsparamos{
+        animation-name: animacionTeEsperamos;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        padding-top:0;
     }
 }
 //-----CREAR UNA ANIMACION PARA EL TE ESPERAMOS ANCIOSOS
@@ -24,6 +31,7 @@
         font-family: $fuenteMain;
         padding-left: 5%;
         padding-right: 5%;
+        font-weight: 200;
     }
     .pFormTrabaja{
         padding: 2%;
@@ -58,6 +66,7 @@
         border-radius: 10px;
         color: black;
         border: 1px solid black;
+        margin-bottom: 2%;
         .pFormTrabaja{
             font-size: 1.5em;
             margin-top: 0;
@@ -76,5 +85,30 @@
             height: 100px;
             width: 100px;
         }
+    }
+}
+
+//------ANIMACIONES
+@keyframes animacionTeEsperamos{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.25);
+    }
+    40%{
+        transform: scale(1.50);
+    }
+    50%{
+        transform:scale(2)
+    }
+    60%{
+        transform: scale(1.50);
+    }
+    80%{
+        transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1);
     }
 }

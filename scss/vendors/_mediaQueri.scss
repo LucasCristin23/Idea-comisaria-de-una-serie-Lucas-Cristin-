@@ -1,21 +1,82 @@
 //--MEDIAS QUERI
 
 @media only screen and (max-width: 600px){
+
+    //-----MEDIAQUERI ¿QUIENES SOMOS?
+    .seccionAPrimerapag{
+        div{
+            iframe{
+                width: 350px;
+            }
+        }
+    }
+
+    //-----MEDIAQUERI TRABAJA CON NOSOTROS
+    .articuloPag3{
+        .TeEsparamos{
+            font-size: 1em;
+        }
+    }
+
+    //-----MEDIAQUERI DENUNCIAS
+    .tituloDenuncias{
+        font-size: 3em;
+    }
+    #pasosDenuncia{
+        text-align: center;
+    }
+
+    //----MEDIAQUERI EQUIPO
+    #seccionGrillaMainEquipo{
+        grid-template-rows: 80px 250px 450px 1610px;
+        #divParrafoEquipo{
+            padding-left:50px ;
+            padding-right:50px ;
+        }
+        #seccionOficiales{
+            flex-direction: column;
+            .pSeccionOficiales{
+                text-align: center;
+            }
+        }
+        .contenedorDetectives{
+            width: 40%;
+            .imagesDetectives{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    
+
+//----MEDIAQUIERI INDEX
+
     #gridEstructuraIndex{
         grid-template-columns: 100%;
-        grid-template-rows: 500px 400px;
+        grid-template-rows: 500px 900px;
         grid-template-areas: "asidexs"
                               "mainxs";
+        #asideIndex{
+            grid-area:asidexs;
+            width: 100%;
+            .navIndex{
+                width: 100%;
+                .navIndex__lista{
+                    text-align: center;
+                }
+            }
+        }
+        #mainIndex{
+            grid-area: mainxs;
+            .primeraSeccionIndex{
+                grid-template-rows: 170px 160px 100px 180px 300px ;
+                #primeraSeccionTituloDiv{
+                    .primeraSeccionIndex__titulo{
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
-    #asideIndex{
-        grid-area:asidexs;
-        width: 100%;
-    }
-    #mainIndex{
-        grid-area: mainxs;
-    }
-   .navIndex{
-       width: 100%;
-   }
-
 }

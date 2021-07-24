@@ -3,9 +3,10 @@
 .tituloDenuncias{
     font-family: $fuenteHeaders;
     text-align: center;
+    font-weight: 300;
     font-size: 4em;
+    
 }
-
 .listaComoRealizarDenuncia{
     height: 50px;
     width: 4%;
@@ -17,6 +18,7 @@
     align-items: center;
     font-family: $fuenteHeaders;
     font-size: 1.5em;
+    font-weight: 200;
 }
 .pFinalDenuncias{
     text-align: center;

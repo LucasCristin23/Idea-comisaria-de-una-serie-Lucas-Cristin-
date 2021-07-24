@@ -27,7 +27,8 @@ img {
 
 header {
   position: sticky;
-  top: 0px; }
+  top: 0px;
+  z-index: 1; }
 
 .footer {
   height: 110px;
@@ -62,6 +63,7 @@ header {
 .tituloDenuncias {
   font-family: "Mate SC", serif;
   text-align: center;
+  font-weight: 300;
   font-size: 4em; }
 
 .listaComoRealizarDenuncia {
@@ -74,7 +76,8 @@ header {
   flex-direction: column;
   align-items: center;
   font-family: "Mate SC", serif;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-weight: 200; }
 
 .pFinalDenuncias {
   text-align: center;
@@ -121,7 +124,8 @@ header {
   grid-area: titulo;
   text-align: center;
   font-size: 4em;
-  font-family: "Mate SC", serif; }
+  font-family: "Mate SC", serif;
+  font-weight: 300; }
 
 .hrEquipo {
   margin: 0;
@@ -136,7 +140,8 @@ header {
   grid-area: parrafo;
   font-size: 1.3em;
   padding-left: 100px;
-  padding-right: 100px; }
+  padding-right: 100px;
+  font-weight: 200; }
 
 #seccionOficiales {
   grid-area: oficiales;
@@ -149,18 +154,21 @@ header {
   #seccionOficiales .pSeccionOficiales {
     align-self: center;
     font-size: 1.5em;
-    padding: 5%; }
+    padding: 5%;
+    font-weight: 200; }
 
 #seccionDetectives {
   margin-top: 3%; }
   #seccionDetectives .tituloDetectives {
     grid-area: detectives;
     text-align: center;
-    font-size: 3em; }
+    font-size: 3em;
+    font-weight: 300; }
   #seccionDetectives .pDetectives {
     grid-area: detectives;
     text-align: center;
-    font-size: 2em; }
+    font-size: 2em;
+    font-weight: 200; }
   #seccionDetectives #equipotactico {
     color: yellow; }
 
@@ -226,7 +234,7 @@ header {
   justify-content: center;
   height: 100%; }
 
-.animate__animated {
+.encabezadoIndex {
   font-style: normal;
   font-weight: bolder;
   color: black;
@@ -256,7 +264,8 @@ header {
 
 .aIndex {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 0.5s; }
 
 .aIndex:hover {
   color: gray; }
@@ -305,12 +314,17 @@ header {
 #divLogoIndex {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  z-index: -1; }
 
 #logoIndex {
   grid-area: logo;
   height: 150px;
   width: 30%; }
+  #logoIndex img {
+    animation-name: animacionEscudo;
+    animation-iteration-count: infinite;
+    animation-duration: 15s; }
 
 .carruselIndex {
   grid-area: carrusel;
@@ -321,16 +335,42 @@ header {
   height: 100%;
   width: 100%; }
 
+@keyframes animacionEscudo {
+  0% {
+    transform: rotateY(0deg); }
+  10% {
+    transform: rotateY(36deg); }
+  20% {
+    transform: rotateY(72deg); }
+  30% {
+    transform: rotateY(108deg); }
+  40% {
+    transform: rotateY(144deg); }
+  50% {
+    transform: rotateY(180deg); }
+  60% {
+    transform: rotateY(216deg); }
+  70% {
+    transform: rotateY(252deg); }
+  80% {
+    transform: rotateY(288deg); }
+  90% {
+    transform: rotateY(324deg); }
+  100% {
+    transform: rotateY(360deg); } }
+
 .seccionAPrimerapag, .seccionBPrimerapag {
   text-align: center;
   margin-bottom: 2%; }
   .seccionAPrimerapag .tituloPrimeraSeccionPag1, .seccionBPrimerapag .tituloPrimeraSeccionPag1 {
     font-size: 4em;
-    font-family: "Mate SC", serif; }
+    font-family: "Mate SC", serif;
+    font-weight: 300; }
   .seccionAPrimerapag .PPag1, .seccionBPrimerapag .PPag1 {
     font-size: 1.5em;
     font-family: "Uchen", serif;
-    margin-bottom: 2%; }
+    margin-bottom: 2%;
+    font-weight: 200; }
 
 .seccionBPrimerapag {
   margin-bottom: 2%; }
@@ -343,20 +383,29 @@ header {
 .articuloPag3 h1 {
   text-align: center;
   font-size: 4em;
-  font-family: "Mate SC", serif; }
+  font-family: "Mate SC", serif;
+  font-weight: 300; }
 
 .articuloPag3 p {
   text-align: center;
   font-size: 1.5em;
   font-family: "Uchen", serif;
-  padding: 2%; }
+  padding: 2%;
+  font-weight: 200; }
+
+.articuloPag3 .TeEsparamos {
+  animation-name: animacionTeEsperamos;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  padding-top: 0; }
 
 .seccionAPag3 p {
   text-align: center;
   font-size: 1.5em;
   font-family: "Uchen", serif;
   padding-left: 5%;
-  padding-right: 5%; }
+  padding-right: 5%;
+  font-weight: 200; }
 
 .seccionAPag3 .pFormTrabaja {
   padding: 2%;
@@ -386,7 +435,8 @@ header {
     font-family: 'Mate SC', serif;
     border-radius: 10px;
     color: black;
-    border: 1px solid black; }
+    border: 1px solid black;
+    margin-bottom: 2%; }
     .seccionBPag3 .divDelFormularioInscripcion .pFormTrabaja {
       font-size: 1.5em;
       margin-top: 0;
@@ -402,15 +452,58 @@ header {
       height: 100px;
       width: 100px; }
 
+@keyframes animacionTeEsperamos {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scale(1.25); }
+  40% {
+    transform: scale(1.5); }
+  50% {
+    transform: scale(2); }
+  60% {
+    transform: scale(1.5); }
+  80% {
+    transform: scale(1.25); }
+  100% {
+    transform: scale(1); } }
+
 @media only screen and (max-width: 600px) {
+  .seccionAPrimerapag div iframe, .seccionBPrimerapag div iframe {
+    width: 350px; }
+  .articuloPag3 .TeEsparamos {
+    font-size: 1em; }
+  .tituloDenuncias {
+    font-size: 3em; }
+  #pasosDenuncia {
+    text-align: center; }
+  #seccionGrillaMainEquipo {
+    grid-template-rows: 80px 250px 450px 1610px; }
+    #seccionGrillaMainEquipo #divParrafoEquipo {
+      padding-left: 50px;
+      padding-right: 50px; }
+    #seccionGrillaMainEquipo #seccionOficiales {
+      flex-direction: column; }
+      #seccionGrillaMainEquipo #seccionOficiales .pSeccionOficiales {
+        text-align: center; }
+    #seccionGrillaMainEquipo .contenedorDetectives {
+      width: 40%; }
+      #seccionGrillaMainEquipo .contenedorDetectives .imagesDetectives img {
+        max-width: 100%; }
   #gridEstructuraIndex {
     grid-template-columns: 100%;
-    grid-template-rows: 500px 400px;
+    grid-template-rows: 500px 900px;
     grid-template-areas: "asidexs" "mainxs"; }
-  #asideIndex {
-    grid-area: asidexs;
-    width: 100%; }
-  #mainIndex {
-    grid-area: mainxs; }
-  .navIndex {
-    width: 100%; } }
+    #gridEstructuraIndex #asideIndex {
+      grid-area: asidexs;
+      width: 100%; }
+      #gridEstructuraIndex #asideIndex .navIndex {
+        width: 100%; }
+        #gridEstructuraIndex #asideIndex .navIndex .navIndex__lista {
+          text-align: center; }
+    #gridEstructuraIndex #mainIndex {
+      grid-area: mainxs; }
+      #gridEstructuraIndex #mainIndex .primeraSeccionIndex {
+        grid-template-rows: 170px 160px 100px 180px 300px; }
+        #gridEstructuraIndex #mainIndex .primeraSeccionIndex #primeraSeccionTituloDiv .primeraSeccionIndex__titulo {
+          text-align: center; } }

@@ -18,6 +18,7 @@
     text-align: center;
     font-size: 4em;
     font-family: $fuenteHeaders;
+    font-weight: 300;
 }
 .hrEquipo{
     margin: 0;
@@ -34,6 +35,7 @@
     font-size: 1.3em;
     padding-left: 100px;
     padding-right: 100px;
+    font-weight: 200;
 }
 #seccionOficiales{
     grid-area: oficiales;
@@ -48,11 +50,9 @@
         align-self: center;
         font-size: 1.5em;
         padding: 5%;
-        
+        font-weight: 200;
     }
 }
-
-
 
 #seccionDetectives{
     margin-top: 3%;
@@ -60,11 +60,13 @@
     grid-area: detectives;
     text-align: center;
     font-size: 3em;
+    font-weight: 300;
     }
     .pDetectives{
     grid-area: detectives;
     text-align: center;
     font-size: 2em;
+    font-weight: 200;
     }
     #equipotactico{
     color:yellow;
@@ -96,6 +98,7 @@ transition: 0.8s;
     height: 80%;
     width: 90%;
 }
+
 
 
 
