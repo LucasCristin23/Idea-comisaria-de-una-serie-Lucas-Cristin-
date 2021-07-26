@@ -468,9 +468,29 @@ header {
   100% {
     transform: scale(1); } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 390px) {
+  #gridEstructuraIndex {
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 870px;
+    grid-template-areas: "asidexs" "mainxs"; }
+    #gridEstructuraIndex #asideIndex {
+      grid-area: asidexs;
+      width: 100%; }
+      #gridEstructuraIndex #asideIndex .navIndex {
+        width: 100%;
+        border-right: 0; }
+        #gridEstructuraIndex #asideIndex .navIndex .navIndex__lista {
+          text-align: center; }
+    #gridEstructuraIndex #mainIndex {
+      grid-area: mainxs; }
+      #gridEstructuraIndex #mainIndex .primeraSeccionIndex {
+        grid-template-rows: 150px 160px 120px 200px 220px; }
+        #gridEstructuraIndex #mainIndex .primeraSeccionIndex #primeraSeccionTituloDiv {
+          font-size: 0.9em; }
+          #gridEstructuraIndex #mainIndex .primeraSeccionIndex #primeraSeccionTituloDiv .primeraSeccionIndex__titulo {
+            text-align: center; }
   .seccionAPrimerapag div iframe, .seccionBPrimerapag div iframe {
-    width: 350px; }
+    width: 330px; }
   .articuloPag3 .TeEsparamos {
     font-size: 1em; }
   .tituloDenuncias {
@@ -486,10 +506,16 @@ header {
       flex-direction: column; }
       #seccionGrillaMainEquipo #seccionOficiales .pSeccionOficiales {
         text-align: center; }
+      #seccionGrillaMainEquipo #seccionOficiales .imagenOficiales {
+        margin-right: 2%; }
     #seccionGrillaMainEquipo .contenedorDetectives {
       width: 40%; }
       #seccionGrillaMainEquipo .contenedorDetectives .imagesDetectives img {
-        max-width: 100%; }
+        max-width: 100%; } }
+
+@media only screen and (min-width: 390px) {
+  .seccionAPrimerapag div iframe, .seccionBPrimerapag div iframe {
+    width: 350px; }
   #gridEstructuraIndex {
     grid-template-columns: 100%;
     grid-template-rows: 500px 900px;
@@ -498,12 +524,89 @@ header {
       grid-area: asidexs;
       width: 100%; }
       #gridEstructuraIndex #asideIndex .navIndex {
-        width: 100%; }
+        width: 100%;
+        border-right: 0; }
         #gridEstructuraIndex #asideIndex .navIndex .navIndex__lista {
           text-align: center; }
     #gridEstructuraIndex #mainIndex {
       grid-area: mainxs; }
       #gridEstructuraIndex #mainIndex .primeraSeccionIndex {
         grid-template-rows: 170px 160px 100px 180px 300px; }
-        #gridEstructuraIndex #mainIndex .primeraSeccionIndex #primeraSeccionTituloDiv .primeraSeccionIndex__titulo {
-          text-align: center; } }
+        #gridEstructuraIndex #mainIndex .primeraSeccionIndex #primeraSeccionTituloDiv {
+          font-size: 1em; }
+          #gridEstructuraIndex #mainIndex .primeraSeccionIndex #primeraSeccionTituloDiv .primeraSeccionIndex__titulo {
+            text-align: center; }
+  .articuloPag3 .TeEsparamos {
+    font-size: 1em; }
+  .tituloDenuncias {
+    font-size: 3em; }
+  #pasosDenuncia {
+    text-align: center; }
+  #seccionGrillaMainEquipo {
+    grid-template-rows: 80px 250px 450px 1610px; }
+    #seccionGrillaMainEquipo #divParrafoEquipo {
+      padding-left: 50px;
+      padding-right: 50px; }
+    #seccionGrillaMainEquipo #seccionOficiales {
+      flex-direction: column; }
+      #seccionGrillaMainEquipo #seccionOficiales .pSeccionOficiales {
+        text-align: center; }
+      #seccionGrillaMainEquipo #seccionOficiales .imagenOficiales {
+        margin-right: 2%; }
+    #seccionGrillaMainEquipo .contenedorDetectives {
+      width: 40%; }
+      #seccionGrillaMainEquipo .contenedorDetectives .imagesDetectives img {
+        max-width: 100%; } }
+
+@media only screen and (min-width: 630px) {
+  .seccionAPrimerapag div iframe, .seccionBPrimerapag div iframe {
+    width: 450px; }
+  #gridEstructuraIndex {
+    grid-template-rows: 500px 800px; }
+    #gridEstructuraIndex #mainIndex .primeraSeccionIndex {
+      grid-template-rows: 100px 160px 80px 150px 300px; }
+  .articuloPag3 .TeEsparamos {
+    font-size: 1.3em; }
+  #seccionGrillaMainEquipo {
+    grid-template-rows: 80px 130px 450px 1600px; } }
+
+@media only screen and (min-width: 784px) {
+  #gridEstructuraIndex {
+    display: grid;
+    grid-template-columns: 17% 80%;
+    grid-template-rows: 300px 500px;
+    grid-template-areas: "nav main" "nav main"; }
+    #gridEstructuraIndex #asideIndex {
+      display: inline-block;
+      grid-area: nav;
+      height: 100%; }
+      #gridEstructuraIndex #asideIndex .navIndex {
+        width: 100%;
+        border-right: 2px solid white; }
+        #gridEstructuraIndex #asideIndex .navIndex .navIndex__lista {
+          text-align: start; }
+    #gridEstructuraIndex #mainIndex {
+      display: inline-block;
+      grid-area: main; }
+  .seccionAPrimerapag div iframe, .seccionBPrimerapag div iframe {
+    width: 600px; }
+  #seccionGrillaMainEquipo {
+    grid-template-rows: 80px 130px 250px 1010px; }
+    #seccionGrillaMainEquipo #seccionOficiales {
+      flex-direction: row; }
+    #seccionGrillaMainEquipo .contenedorDetectives {
+      width: 30%; } }
+
+@media only screen and (min-width: 992px) {
+  #gridEstructuraIndex {
+    grid-template-columns: 15% 84%; }
+    #gridEstructuraIndex #mainIndex .primeraSeccionIndex {
+      grid-template-rows: 100px 160px 80px 110px 348px; }
+      #gridEstructuraIndex #mainIndex .primeraSeccionIndex .carruselIndex {
+        margin-left: 1%; }
+  #seccionGrillaMainEquipo #divParrafoEquipo {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1.5em; }
+  #seccionGrillaMainEquipo .contenedorDetectives {
+    width: 20%; } }

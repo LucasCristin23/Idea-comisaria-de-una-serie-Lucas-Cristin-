@@ -1,24 +1,56 @@
 //--MEDIAS QUERI
 
-@media only screen and (max-width: 600px){
+//-----HASTA 390PX
+@media only screen and (max-width: 390px){
 
-    //-----MEDIAQUERI ¿QUIENES SOMOS?
-    .seccionAPrimerapag{
-        div{
-            iframe{
-                width: 350px;
+    //----INDEX
+    #gridEstructuraIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 870px;
+        grid-template-areas: "asidexs"
+                              "mainxs";
+        #asideIndex{
+            grid-area:asidexs;
+            width: 100%;
+            .navIndex{
+                width: 100%;
+                border-right: 0;
+                .navIndex__lista{
+                    text-align: center;
+                }
+            }
+        }
+        #mainIndex{
+            grid-area: mainxs;
+            .primeraSeccionIndex{
+                grid-template-rows: 150px 160px 120px 200px 220px ;
+                #primeraSeccionTituloDiv{
+                    font-size: 0.9em;
+                    .primeraSeccionIndex__titulo{
+                        text-align: center;
+                    }
+                }
             }
         }
     }
 
-    //-----MEDIAQUERI TRABAJA CON NOSOTROS
+    //----QUIENES SOMOS
+    .seccionAPrimerapag{
+        div{
+            iframe{
+                width: 330px;
+            }
+        }
+    }
+
+    //---TRABAJA CON NOSOTROS
     .articuloPag3{
         .TeEsparamos{
             font-size: 1em;
         }
     }
 
-    //-----MEDIAQUERI DENUNCIAS
+    //DENUNCIAS
     .tituloDenuncias{
         font-size: 3em;
     }
@@ -38,6 +70,9 @@
             .pSeccionOficiales{
                 text-align: center;
             }
+            .imagenOficiales{
+                margin-right: 2%;
+            }
         }
         .contenedorDetectives{
             width: 40%;
@@ -48,20 +83,33 @@
             }
         }
     }
-    
+}
+
+
+//---HASTA 600 PX 
+@media only screen and (min-width: 390px){
+
+    //-----MEDIAQUERI ¿QUIENES SOMOS?
+    .seccionAPrimerapag{
+        div{
+            iframe{
+                width: 350px;
+            }
+        }
+    }
 
 //----MEDIAQUIERI INDEX
-
     #gridEstructuraIndex{
         grid-template-columns: 100%;
         grid-template-rows: 500px 900px;
         grid-template-areas: "asidexs"
-                              "mainxs";
+                          "mainxs";
         #asideIndex{
             grid-area:asidexs;
             width: 100%;
             .navIndex{
                 width: 100%;
+                border-right: 0;
                 .navIndex__lista{
                     text-align: center;
                 }
@@ -72,6 +120,7 @@
             .primeraSeccionIndex{
                 grid-template-rows: 170px 160px 100px 180px 300px ;
                 #primeraSeccionTituloDiv{
+                    font-size: 1em;
                     .primeraSeccionIndex__titulo{
                         text-align: center;
                     }
@@ -79,4 +128,159 @@
             }
         }
     }
+
+    //---TRABAJA CON NOSOTROS
+    .articuloPag3{
+        .TeEsparamos{
+            font-size: 1em;
+        }
+    }
+
+     //DENUNCIAS
+     .tituloDenuncias{
+        font-size: 3em;
+    }
+    #pasosDenuncia{
+        text-align: center;
+    }
+
+    //----MEDIAQUERI EQUIPO
+    #seccionGrillaMainEquipo{
+        grid-template-rows: 80px 250px 450px 1610px;
+        #divParrafoEquipo{
+            padding-left:50px ;
+            padding-right:50px ;
+        }
+        #seccionOficiales{
+            flex-direction: column;
+            .pSeccionOficiales{
+                text-align: center;
+            }
+            .imagenOficiales{
+                margin-right: 2%;
+            }
+        }
+        .contenedorDetectives{
+            width: 40%;
+            .imagesDetectives{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
+
+//-----HASTA 768PX
+@media only screen and (min-width: 630px){
+
+    //-----MEDIAQUERI ¿QUIENES SOMOS?
+    .seccionAPrimerapag{
+        div{
+            iframe{
+                width: 450px;
+            }
+        }
+    }
+
+//----MEDIAQUIERI INDEX
+    #gridEstructuraIndex{
+        grid-template-rows: 500px 800px;
+        #mainIndex{
+            .primeraSeccionIndex{
+                grid-template-rows: 100px 160px 80px 150px 300px;
+            }
+        }
+    }
+
+    //---TRABAJA CON NOSOTROS
+    .articuloPag3{
+        .TeEsparamos{
+            font-size: 1.3em;
+        }
+    }
+
+    //----MEDIAQUERI EQUIPO
+    #seccionGrillaMainEquipo{
+        grid-template-rows: 80px 130px 450px 1600px;
+    }
+}
+
+//-----HASTA 992PX
+@media only screen and (min-width: 784px){
+
+    //----INDEX
+    #gridEstructuraIndex{
+        display: grid;
+        grid-template-columns: 17% 80% ;
+        grid-template-rows: 300px 500px;
+        grid-template-areas: "nav main"
+                             "nav main";
+        #asideIndex{
+        display: inline-block;
+        grid-area: nav;
+        height: 100%;
+        .navIndex{
+            width: 100%;
+            border-right: 2px solid white;
+            .navIndex__lista{
+                text-align:start;
+            }
+        }
+        }
+        #mainIndex{
+        display: inline-block;
+        grid-area: main;
+        }
+    }
+
+    //-----MEDIAQUERI ¿QUIENES SOMOS?
+    .seccionAPrimerapag{
+        div{
+            iframe{
+                width: 600px;
+            }
+        }
+    }
+
+    //----MEDIAQUERI EQUIPO
+    #seccionGrillaMainEquipo{
+        grid-template-rows: 80px 130px 250px 1010px;
+        #seccionOficiales{
+            flex-direction:row;
+        }
+        .contenedorDetectives{
+            width: 30%;
+        }
+    }
+}
+//----HASTA 1200PX
+@media only screen and (min-width: 992px){
+
+    //-----INDEX
+    #gridEstructuraIndex{
+        grid-template-columns: 15% 84% ;
+        #mainIndex{
+            .primeraSeccionIndex{
+                grid-template-rows: 100px 160px 80px 110px 348px;
+                .carruselIndex{
+                    margin-left: 1%;
+                }
+            }
+        }
+    }
+
+    //----EQUIPO
+    #seccionGrillaMainEquipo{
+        #divParrafoEquipo{
+            padding-left:100px ;
+            padding-right:100px ;
+            font-size: 1.5em;
+        }
+        .contenedorDetectives{
+            width: 20%;
+        }
+    }
+        
+}
+
